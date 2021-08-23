@@ -1,4 +1,4 @@
-let sucos = ["caja", "melao", "melancia"];
+// let sucos = ["caja", "limao", "melancia"];
 
 // for(suco of sucos) {
 //     console.log(suco);
@@ -11,39 +11,21 @@ let sucos = ["caja", "melao", "melancia"];
 //     i++
 // }
 
-for (i = 0 ; i < 3 ; i++) {
-    console.log(sucos[i]);
-}
+// function printStringInObject(object) {
 
-function definirMaior(x,y) {
-    let maiorNum;
-    if (x>y) {
-        maiorNum = x;
-        console.log(maiorNum);
-    }
-    else {
-        maiorNum = y;
-        console.log(maiorNum);
-    }
-}
+//     for (prop in object) {
+//         if (typeof object[prop] === "string") {
+//             console.log(prop, object[prop]);
+//         }
+//     }
 
-definirMaior(10,4);
+// }
 
-function printStringInObject(object) {
-
-    for (prop in object) {
-        if (typeof object[prop] === "string") {
-            console.log(prop, object[prop]);
-        }
-    }
-
-}
-
-let user = {
-    nome: 'Felipe',
-    idade: 33,
-}
-printStringInObject(user);
+// let user = {
+//     nome: 'Felipe',
+//     idade: 33,
+// }
+// printStringInObject(user);
 
 
 // Divisível por 3 -> Fizz
@@ -51,7 +33,6 @@ printStringInObject(user);
 // Divisível por 3 e por 5 -> FizzBuzz
 // Não divisível por 3 nem por 5 -> Exibir numero
 // Não é um númerp -> Exibir não é um número
-
 
 function fizzBuzz(x) {
     let result;
@@ -115,7 +96,7 @@ function printNumberType(number) {
         console.log(`${array[i]} is ${defineNumberType(array[i])}`);
     }
 }
-printNumberType(5);
+printNumberType(2);
 
 // Função retorna soma dos múltiplos de 3 e 5 em um dado intervalo
 
@@ -190,7 +171,7 @@ function showStar(number) {
         console.log(star);
     }
 }
-showStar(5);
+showStar(3);
 
 //Função para mostrar numeros primos
 
@@ -217,7 +198,7 @@ function primeList(listOfNumbers) {
         }
     }
 }
-primeList(15);
+primeList(5);
 
 function registerClient(name,taxNumber,service) {
     return { 
@@ -244,6 +225,31 @@ console.log(client2);
 const client3 = {...client2};
 console.log(client3);
 
+const greetings = new String("Hello!");
+console.log(greetings);
 
 
+
+
+const s = "12:42:00AM";
+function timeConversion(s) {
+   let separator = ":";
+   let hour = s.substring(0,2);
+   let minute = s.substring(3,5);
+   let second = s.substring(6,8);
+   let sufix = s.substring(8,10);
+
+   if (hour === "12" && sufix === "AM") {
+       hour = "00";
+   }
+   else if (hour === "12" && sufix === "PM") {
+    hour = "12";
+   }
+   else if (Number(hour) < 12 && sufix === "PM") {
+        hour = (Number(hour) + 12).toString(); 
+    }   
+    let answer = `${hour+separator+minute+separator+second}`;
+    console.log(answer);
+}
+timeConversion(s);
 
