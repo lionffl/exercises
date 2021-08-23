@@ -1,21 +1,21 @@
+const s = "12:42:00AM";
 function timeConversion(s) {
-   s = new String(s);
-   let separator = ":";
-   let hour = `${s[0]+s[1]}`;
-   let minute = `${s[3]+s[4]}`;
-   let second = `${s[6]+s[7]}`;
-   let sufix = `${s[8]+s[9]}`;
-
-   if (hour === "12" && sufix === "AM") {
-       hour = "00";
-   }
-   else if (hour === "12" && sufix === "PM") {
-    hour = "12";
-   }
-   else if (Number(hour) < 12 && sufix === "PM") {
-        hour = Number(hour) + 12; 
-    }   
-    hour = hour.toString();
-    console.log(`${hour+separator+minute+separator+second}`);
-}
-timeConversion(s);
+    let separator = ":";
+    let hour = s.substring(0,2);
+    let minute = s.substring(3,5);
+    let second = s.substring(6,8);
+    let sufix = s.substring(8,10);
+ 
+    if (hour === "12" && sufix === "AM") {
+        hour = "00";
+    }
+    else if (hour === "12" && sufix === "PM") {
+     hour = "12";
+    }
+    else if (Number(hour) < 12 && sufix === "PM") {
+         hour = (Number(hour) + 12).toString(); 
+     }   
+     let answer = `${hour+separator+minute+separator+second}`;
+     console.log(answer);
+ }
+ timeConversion(s);
