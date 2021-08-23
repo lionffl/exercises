@@ -1,10 +1,10 @@
 const s = "12:42:00AM";
 function timeConversion(s) {
-    let separator = ":";
-    let hour = s.substring(0,2);
-    let minute = s.substring(3,5);
-    let second = s.substring(6,8);
-    let sufix = s.substring(8,10);
+    const separator = ":";
+    const hour = s.substring(0,2);
+    const minute = s.substring(3,5);
+    const second = s.substring(6,8);
+    const sufix = s.substring(8,10);
  
     if (hour === "12" && sufix === "AM") {
         hour = "00";
@@ -15,7 +15,7 @@ function timeConversion(s) {
     else if (Number(hour) < 12 && sufix === "PM") {
          hour = (Number(hour) + 12).toString(); 
      }   
-     let answer = `${hour+separator+minute+separator+second}`;
+     const answer = `${hour+separator+minute+separator+second}`;
      console.log(answer);
      return answer;
  }
