@@ -250,6 +250,7 @@ function timeConversion(s) {
     }   
     let answer = `${hour+separator+minute+separator+second}`;
     console.log(answer);
+    return answer;
 }
 timeConversion(s);
 
