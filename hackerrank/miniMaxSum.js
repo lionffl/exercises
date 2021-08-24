@@ -1,5 +1,5 @@
 const arr = [1, 3, 5, 7, 9];
-function miniMaxSum(array) {    
+function miniMaxSum(arr) {    
     // let arraySize = arr.length;
     // let maxNumber = 0;
     // let miniNumber = arr[0];
