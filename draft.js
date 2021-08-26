@@ -228,4 +228,72 @@ console.log(client3);
 const greetings = new String("Hello!");
 console.log(greetings);
 
+function Address(street,city,zipCode) {
+    this.street = street;
+    this.city = city;
+    this.zipCode = zipCode;
+}
+
+function createAddress(street,city,zipCode) {
+    return {
+        street,
+        city,
+        zipCode,
+    }
+}
+
+const address = createAddress("Marcos Macedo","Fortaleza","60150-190");
+const address2 = createAddress("Maria Tomásia","Fortaleza","60150-170");
+
+function showAddress(object) {
+    for (let keys in object) {
+        console.log(keys,object[keys]);
+    }
+}
+
+console.log(address2);
+
+function compareKey(address1,address2) {
+    const address1Array = Object.keys(address1);
+    const address2Array = Object.keys(address2);
+    let answer = "";
+    if (address1Array.length !== address2Array.length) {
+        console.log("Properties are not the same.")
+    } else {
+        for (let i = 0 ; i < address1Array.length ; i++) {
+            if (address1Array[i] === address2Array[i]) {
+                answer = "Properties are the same."
+            } else {
+                answer = "Properties are not the same."
+            }
+        }
+    }
+    console.log(answer);
+}
+
+function compareValue(address1,address2) {
+    const address1Array = Object.values(address1);
+    const address2Array = Object.values(address2);
+    let answer = "";
+    if (address1Array.length !== address2Array.length) {
+        console.log("Values are not the same.")
+    } else {
+        for (let i = 0 ; i < address1Array.length ; i++) {
+            if (address1Array[i] === address2Array[i]) {
+                answer = "Values are the same."
+            } else {
+                answer = "Values are not the same."
+            }
+        }
+    }
+    console.log(answer);
+}
+
+showAddress(address);
+compareKey(address,address2);
+compareValue(address,address2);
+
+
+
+
 
