@@ -293,7 +293,35 @@ showAddress(address);
 compareKey(address,address2);
 compareValue(address,address2);
 
+function makePost(title,post,author) {
+    return {
+        title,
+        post,
+        author,
+        views: 0,
+        comments: [],
+        status: true,
+    }
+}
+
+let comments = [
+    { author: "Lion", msg: "this is a comment" },
+    { author: "I am the author 2", msg: "this is a comments too" }
+]
+const post1 = makePost("This is a blog title","This is a blog post", "Lion")
+
+Object.defineProperty(post1, 'views', { value: 4 });
+Object.defineProperty(post1, 'coments', { value: comments[1] });
+Object.defineProperty(post1, 'status', { value: false });
+
+console.log(post1);
+
+// const author = comments.find(function(author) {
+//     return author.author === 'Lion';
+// });
+
+const author = comments.find((findAuthor) => findAuthor.author === 'Lion');
 
 
-
+console.log(author);
 
