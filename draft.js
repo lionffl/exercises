@@ -1,33 +1,3 @@
-// let sucos = ["caja", "limao", "melancia"];
-
-// for(suco of sucos) {
-//     console.log(suco);
-// }
-
-// let i = 0;
-
-// while(i < 3) {
-//     console.log(sucos[i]);
-//     i++
-// }
-
-// function printStringInObject(object) {
-
-//     for (prop in object) {
-//         if (typeof object[prop] === "string") {
-//             console.log(prop, object[prop]);
-//         }
-//     }
-
-// }
-
-// let user = {
-//     nome: 'Felipe',
-//     idade: 33,
-// }
-// printStringInObject(user);
-
-
 // Divisível por 3 -> Fizz
 // Divisível por 5 -> Buzz
 // Divisível por 3 e por 5 -> FizzBuzz
@@ -323,4 +293,38 @@ console.log(post1);
 const author = comments.find((findAuthor) => findAuthor.author === 'Lion');
 
 console.log(author);
+
+const numbers = [1,2,3,4];
+
+// for (let i = 0 ; i < numbers.length ; i++) {
+//     console.log(numbers[i])
+// }
+
+// for (number of numbers) {
+//     console.log(number);
+// }
+
+// numbers.forEach(function(number) {
+//     console.log(number);
+// })
+
+numbers.forEach((number) => console.log(number));
+
+const textTitle = "Esse é um título de um texto"
+
+function makeUrl(string) {
+    const split = string.split(' ');
+    const join = split.join('-');
+    const url = join.toLowerCase();
+    return url
+}
+
+console.log(makeUrl(textTitle));
+
+const age = prompt('How old are you?');
+if (age >= 18) {
+    alert('Ok, you are free to go.')
+} else alert('Sorry, you have to leave')
+
+
 
