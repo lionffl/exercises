@@ -326,6 +326,3 @@ console.log(makeUrl(textTitle));
 // if (age >= 18) {
 //     alert('Ok, you are free to go.')
 // } else alert('Sorry, you have to leave')
-
-
-
