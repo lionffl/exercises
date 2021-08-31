@@ -309,7 +309,7 @@ const numbers = [1,2,3,4];
 //     console.log(number);
 // })
 
-numbers.forEach((number) => console.log(number));
+// numbers.forEach((number) => console.log(number));
 
 const textTitle = "Esse é um título de um texto"
 
