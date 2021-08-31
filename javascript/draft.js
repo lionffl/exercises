@@ -97,6 +97,7 @@ function sumMultiple(number) {
     console.log(`Sum of multiple of five  = ${sumOfFive}`)
     console.log(`Therefore, the sum of multiple of five and three = ${sumOfFive+sumOfThree}`)
 }
+
 sumMultiple(10);
 
 // Obter a média a partir de um array
@@ -168,6 +169,7 @@ function primeList(listOfNumbers) {
         }
     }
 }
+
 primeList(5);
 
 function registerClient(name,taxNumber,service) {
@@ -180,7 +182,6 @@ function registerClient(name,taxNumber,service) {
 const client = registerClient("Casa dos Ventos",1111111,"Energias Renováveis");
 
 console.log(client);
-
 
 function Client(name,taxNumber,service) {
     this.name = name;
