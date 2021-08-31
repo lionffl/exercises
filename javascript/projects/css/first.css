@@ -1,0 +1,61 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.all {
+    height: 300px;
+    width: 900px;
+    margin: 5px;
+    padding: 10px;
+}
+
+.title {
+    color: red;
+    /* font-size: 70%; */
+    text-align: center;
+}
+
+.subtitle {
+    padding: 5px;
+    margin: 5px;
+    /* font-size: 80%; */
+}
+
+.list {
+    list-style-type: none;
+    padding: 5px;
+    margin: 5px;
+    /* font-size: 80%;  */
+}
+
+.list-item {
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    padding-top: 2px;
+    margin-top: 2px;
+}
+
+.block {
+    /* width: 45%; */
+    background-color: lightgrey;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.result {
+    margin-left: 20%;
+}
+
+.bottom {
+     width: 77%; 
+    background-color: lightgrey;
+    border-radius: 5px;
+}
+
+.answer {
+    padding: 5px;
+    margin: 5px;
+    /* font-size: 70%; */
+    text-align: justify;
+}
