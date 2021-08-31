@@ -322,10 +322,10 @@ function makeUrl(string) {
 
 console.log(makeUrl(textTitle));
 
-const age = prompt('How old are you?');
-if (age >= 18) {
-    alert('Ok, you are free to go.')
-} else alert('Sorry, you have to leave')
+// const age = prompt('How old are you?');
+// if (age >= 18) {
+//     alert('Ok, you are free to go.')
+// } else alert('Sorry, you have to leave')
 
 
 
