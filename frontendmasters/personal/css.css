@@ -1,0 +1,49 @@
+/* CORES */
+
+.title {
+    color: #ff8800;
+}
+
+.subtitle {
+    color: hsl(19, 100%, 50%);
+}
+
+/* FONTE */
+
+.title {
+    font-family: verdana;
+}
+
+.text {
+    font-family: Comic Sans MS; 
+}
+
+.subtitle { 
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+select {
+    font-family: Comic Sans MS;
+}
+
+/* BORDAS */
+
+.title {
+    text-align: center;
+}
+
+.subtitle {
+    border: red hidden;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.text {
+    border-radius: 5px;
+    padding: 5px 15px;
+    background: rgb(230, 225, 225);
+    display: inline-block;
+}
+
+
+

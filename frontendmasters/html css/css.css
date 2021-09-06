@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+  }
+
+.header {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    text-align: center;
+    margin: 20px;
+    padding: 5px;
+}
+
+.row {
+    display: flex;
+    align-items: stretch;
+}
+
+.news {
+    border: solid black 1px;
+    padding: 5px;
+}
+
+.side {
+    width: 25%;
+}
+
+.center {
+    width: 50%;
+}
+
+.bottomleft {
+    width: 25%;
+}
+
+.bottomcenter {
+    width: 75%;
+}
+
+.title {
+    text-align: center;
+    font-style: italic;
+    padding: 10px;
+    font-size: 25px;
+}
+
+.img {
+   width: 100%;
+  
+}
