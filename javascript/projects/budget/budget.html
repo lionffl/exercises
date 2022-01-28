@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget</title>
+    <link rel="stylesheet" href="./css/budget.css">
+    <link rel="icon" href="./img/favicon.png">
+</head>
+<body>
+    <div class="all">
+        <h1 class="title">Estimativa de custo de servidão de Linha</h1>
+        <img class="logo" src="./img/Logo_dms.png" alt="logo_damous">
+        <div class="block">
+            <h2 class="subtitle">Dados da LT já implantada</h2>
+            <ul class="list">
+                <li class="list-item">Digite a extensão da LT implantada em metros</li><input class="source-extension" placeholder="15km -> 15000">
+                <li class="list-item">Digite a largura da faixa da LT implantada</li><input class="source-width" placeholder="40m -> 40">
+                <li class="list-item">Digite o total que foi pago em indenizações</li><input class="source-payment" placeholder="R$544.500,47 -> 544500.47">
+                <li class="list-item">Digite o ano de implantação da Linha</li><input class="source-year" placeholder="2015">
+            </ul>
+        </div>
+        <div class="block">
+            <h2 class="subtitle">Dados do projeto a ser implantado</h2>
+            <ul class="list">
+                <li class="list-item">Digite a extensão do projeto em metros</li><input class="project-extension" placeholder="35,7km -> 35700">
+                <li class="list-item">Digite a largura da faixa do projeto</li><input class="project-width" placeholder="20m -> 20">
+                <li class="list-item">Digite o índice de correção no período</li><input class="economic-correction" placeholder="35% -> 1.35">
+                <li class="list-item">O total estimado é de:</li><button onclick="calcEst()">Calcular</button> <label class="result">Resultado</label>
+            </ul>
+        </div>
+        <div class="bottom">
+            <h2 class="subtitle">Resposta</h2>
+            <p class='answer'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus consequatur quia, magnam voluptate, provident nulla nihil fugit quo aliquam qui amet! Consequatur omnis unde distinctio vitae officia. Quae, necessitatibus maxime.</p></p>
+    </div>
+    <script src="./js/budget.js"></script>
+</body>
+</html>
