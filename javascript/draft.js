@@ -326,3 +326,77 @@ console.log(makeUrl(textTitle));
 // if (age >= 18) {
 //     alert('Ok, you are free to go.')
 // } else alert('Sorry, you have to leave')
+
+
+
+// function encode(string) {
+//     let vowels = ['a', 'e', 'i', 'o', 'u'];
+//     let encodedVowels = ['1', '2', '3', '4', '5'];
+//     let newWord = string.replace(/a/g,'4').replace(/e/g,'2');
+//     return newWord;
+// }
+
+
+// console.log(encode('merda merda'))
+
+
+let word = 'sagui';
+let vowels = ['a', 'e', 'i', 'o', 'u'];
+let encodedVowels = ['1', '2', '3', '4', '5'];
+let arrayOfWordLetters = [];
+let encodedWord = '';
+
+for (let i = 0; i < word.length; i++) {
+    console.log(word[i]);
+    arrayOfWordLetters.push(word[i]);
+}
+
+for (let i = 0; i < arrayOfWordLetters.length; i++) {
+    for (let j = 0; j < arrayOfWordLetters.length; j++) {
+        if (arrayOfWordLetters[i] === vowels[j]) {
+            arrayOfWordLetters[i] = encodedVowels[j];
+        } else { arrayOfWordLetters[i] = arrayOfWordLetters[i] }
+    }
+}
+
+for (let i = 0; i < arrayOfWordLetters.length; i++) {
+    encodedWord = encodedWord + arrayOfWordLetters[i];
+}
+
+
+
+console.log(arrayOfWordLetters);
+console.log(encodedWord);
+
+let array = [];
+let arrayOfNumbers = [];
+let cupOfWater = 0;
+
+function hydrate(string) {
+    
+  
+    for (let i = 0; i < string.length; i++) {
+      array.push(string[i])
+    }
+  
+    for (let i = 0; i < array.length; i++) {
+      if (Number.isInteger(parseInt(array[i]))) {
+        arrayOfNumbers.push(array[i])
+      }
+    } 
+  
+    for (let number of arrayOfNumbers) {
+      cupOfWater = cupOfWater + parseInt(number); 
+    }
+    
+    switch (cupOfWater) {
+        case 1:
+            return `${cupOfWater} copo de água`;
+        default:
+            return `${cupOfWater} copos de água`; 
+    }
+  }
+
+console.log(array);
+console.log(arrayOfNumbers);
+console.log(hydrate("0 copos, 1 de vodka"));
